@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+		
+		<title>Srcset e sizes</title>
+		
+		<style>
+			*{margin:0}
+		</style>
+		
+		<script>
+		
+			//alert(window.devicePixelRatio);
+		
+		</script>
+		
+    </head>
+    <body>
+		
+		<img srcset="img-300w.jpg 300w,
+             img-400w.jpg 400w,
+             img-600w.jpg 600w,
+			 img-800w.jpg 800w"
+			sizes="(max-width: 799px) 100vw,
+			(min-width: 800px) 800px"
+			src="img-800w.jpg">
+
+    </body>
+</html>
